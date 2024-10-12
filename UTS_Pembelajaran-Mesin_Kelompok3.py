@@ -1,13 +1,10 @@
 # import required library
 import streamlit as st
-import pandas as pd
-import numpy as np
 import pickle
-import datetime
 
 # loading the model to predict on the data
 try:
-    model = pickle.load(open('linear_model', 'rb')) #???
+    model = pickle.load(open('linear_model.pkl', 'rb'))
 except Exception as e:
     st.error(f"Error loading model: {e}")
 
@@ -17,7 +14,7 @@ social_mapping = {'Dapat bersosialisasi dengan baik': 0, 'Bermasalah, sulit bers
 health_mapping = {'Kurang sehat/kondisi fisik-rohani lemah': 0, 'Perlu perhatian khusus': 1, 'Sehat': 2}
 
 # fungsi untuk mengambil inputan user
-def prediction(finance, social, health):
+def prediction(social, finance, health):
   # map inputs to encoded value
   finance_encoded = finance_mapping[finance]
   social_encoded = social_mapping[social]
@@ -62,7 +59,8 @@ def main():
 
   # predict button
   if st.button("Submit"):
-    result = prediction(finance, social, health)
+    result = prediction(social, finance, health)
+    print(result)
 
     if result == 1:
       output_message = "Selamat! Anak Anda diterima di PAUD. Kami sangat senang menyambutnya di keluarga kami. Informasi lebih lanjut akan dikirim ke email yang terdaftar dalam formulir."
