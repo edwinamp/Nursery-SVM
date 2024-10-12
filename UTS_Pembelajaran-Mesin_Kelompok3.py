@@ -4,7 +4,7 @@ import pickle
 
 # loading the model to predict on the data
 try:
-    model = pickle.load(open('linear_model.pkl', 'rb'))
+    model = pickle.load(open('rbf_model.pkl', 'rb'))
 except Exception as e:
     st.error(f"Error loading model: {e}")
 
