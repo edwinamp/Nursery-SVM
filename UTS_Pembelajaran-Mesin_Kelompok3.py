@@ -62,7 +62,7 @@ def main():
     result = prediction(social, finance, health)
     print(result)
 
-    if result == 1:
+    if result == 1 or result == 2:
       output_message = "Selamat! Anak Anda diterima di PAUD. Kami sangat senang menyambutnya di keluarga kami. Informasi lebih lanjut akan dikirim ke email yang terdaftar dalam formulir."
     elif result == 0:
       output_message = "Maaf, anak Anda tidak diterima di PAUD kali ini. Kami mengucapkan terima kasih atas partisipasi Anda dan semoga sukses di masa depan!"
