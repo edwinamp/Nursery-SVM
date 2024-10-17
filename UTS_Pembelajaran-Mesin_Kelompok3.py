@@ -51,7 +51,7 @@ def main():
   social_opt = ['Dapat bersosialisasi dengan baik', 'Sedikit bermasalah, perlu perhatian khusus', 'Bermasalah, sulit bersosialisasi']
   social = st.selectbox("Kehidupan Sosial Anak", social_opt)
 
-  health_opt = ['Sehat', 'Perlu perhatian khusus', 'Kurang sehat/kondisi fisik-rohani lemah']
+  health_opt = ['Sehat jasmani-rohani', 'Sehat (secara umum)', 'Kurang sehat/kondisi fisik-rohani lemah']
   health = st.selectbox("Kesehatan Anak", health_opt)
 
   # inisialisasi variabel result
