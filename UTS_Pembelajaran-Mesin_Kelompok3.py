@@ -62,8 +62,12 @@ def main():
     result = prediction(social, finance, health)
     print(result)
 
-    if result == 1 or result == 2:
+    if result == 1:
+      #st.write("Klasifikasi: priority (1)")
       output_message = "Selamat! Anak Anda diterima di PAUD. Kami sangat senang menyambutnya di keluarga kami. Informasi lebih lanjut akan dikirim ke email yang terdaftar dalam formulir."
+    elif result == 2:
+      #st.write("Klasifikasi: spec_prior (2)")
+      output_message = "Selamat! Kami dengan penuh sukacita mengumumkan bahwa anak Anda telah diterima di PAUD. Betapa senangnya kami menyambutnya sebagai bagian dari keluarga besar kami! Informasi lebih lanjut akan segera dikirimkan ke email yang terdaftar pada formulir."
     elif result == 0:
       output_message = "Maaf, anak Anda tidak diterima di PAUD kali ini. Kami mengucapkan terima kasih atas partisipasi Anda dan semoga sukses di masa depan!"
 
