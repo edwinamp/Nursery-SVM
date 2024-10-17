@@ -9,7 +9,7 @@ except Exception as e:
     st.error(f"Error loading model: {e}")
 
 # Encoding mappings
-finance_mapping = {'Stabil': 0, 'Tidak Stabil': 1}
+finance_mapping = {'Stabil': 0, 'Tidak/Kurang Stabil': 1}
 social_mapping = {'Dapat bersosialisasi dengan baik': 0, 'Bermasalah, sulit bersosialisasi': 1, 'Sedikit bermasalah, perlu perhatian khusus': 2}
 health_mapping = {'Kurang sehat/kondisi fisik-rohani lemah': 0, 'Sehat jasmani-rohani': 1, 'Sehat (secara umum)': 2}
 
@@ -45,7 +45,7 @@ def main():
   jnsKelamin = st.radio("Pilih jenis kelamin", ("Laki-laki", "Perempuan"))
 
   # input data yang akan dimasukkan ke model
-  finance_opt = ['Stabil', 'Tidak Stabil']
+  finance_opt = ['Stabil', 'Tidak/Kurang Stabil']
   finance = st.selectbox("Keuangan Orang Tua", finance_opt)
 
   social_opt = ['Dapat bersosialisasi dengan baik', 'Sedikit bermasalah, perlu perhatian khusus', 'Bermasalah, sulit bersosialisasi']
