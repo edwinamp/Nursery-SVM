@@ -11,7 +11,7 @@ except Exception as e:
 # Encoding mappings
 finance_mapping = {'Stabil': 0, 'Tidak Stabil': 1}
 social_mapping = {'Dapat bersosialisasi dengan baik': 0, 'Bermasalah, sulit bersosialisasi': 1, 'Sedikit bermasalah, perlu perhatian khusus': 2}
-health_mapping = {'Kurang sehat/kondisi fisik-rohani lemah': 0, 'Perlu perhatian khusus': 1, 'Sehat': 2}
+health_mapping = {'Kurang sehat/kondisi fisik-rohani lemah': 0, 'Sehat jasmani-rohani': 1, 'Sehat (secara umum)': 2}
 
 # fungsi untuk mengambil inputan user
 def prediction(social, finance, health):
