@@ -1,8 +1,4 @@
 **Kelompok 3 Pembelajaran Mesin**
-2210511046 Hanifah Az-Zahra
-2210511054 Dinda Cantika Putri
-2210511070 Choirunnisa Zalfaa Nabilah
-2210511072 Edwina Martha Putri
 
 - To try the User Interface of Nursery School Applications Simulation:
 https://uts-kelompok3-svm.streamlit.app
